@@ -18,7 +18,7 @@ import { checkUserSession } from './redux/user/user.actions';
 const App = ({ checkUserSession, currentUser }) => {
   useEffect(() => {
     checkUserSession()
-  }, [checkUserSession]); // The Empty array reminds me the ComponentDidMount that has been replaced.
+  }, [checkUserSession]); // The Empty array reminds me the ComponentWillReceiveProps. 
   
   return (
     <div>
